@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCHwagS_rFAy9Ntmk9tI2nAQqQWDzLriLU",
+    authDomain: "new-todo-17e9d.firebaseapp.com",
+    databaseURL: "https://new-todo-17e9d.firebaseio.com",
+    projectId: "new-todo-17e9d",
+    storageBucket: "new-todo-17e9d.appspot.com",
+    messagingSenderId: "872136035939",
+    appId: "1:872136035939:web:ed86afb1eca5ad0f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+
+<style>
+    button{
+        float: right;
+        list-style-type: none;
+        height: 30px;
+        width: 50px;
+        border: 2px solid rgb(149, 147, 147); 
+        border-radius: 8px 0px 8px 0px;
+    }
+div{
+    width: 30%;
+    border:  10px solid rgb(102, 99, 99);
+    border-radius: 5px;
+    margin: auto;
+    background-color: rgb(116, 113, 113);
+}
+li{
+    border: 1px solid;
+    padding: 10px;
+    height: 28px;
+    margin: 5px;
+    list-style-type: none;
+    background-color: rgb(190, 186, 186);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+p{
+    border: 1px solid;
+    margin: 10px;
+    padding: 5px;
+}
+input{
+    width: 78%;
+    height: 35px;
+    margin: 5px;
+    margin-left: 8px;
+}
+#add{
+    height: 40px !important;
+    background-color: greenyellow;
+    margin-top: 5px !important;
+    margin-right: 7px !important;
+    border-radius: 0px;
+    width: 60px !important;
+}
+span{
+    margin-left: 130px ;
+    color: black;
+    font-weight: bold;
+}
+</style>
+<body>
+    
+  <script src="index.js"></script>  
+
+  <div>
+<input type="text" id="inpt"> <button id="add" onclick="addme()"> add me</button>
+<p id="para">
+
+</p>
+<span> created by:experience</span>
+  </div>
+</body>
+</html>
